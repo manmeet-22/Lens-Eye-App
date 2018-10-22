@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.otaliastudios.cameraview.CameraView
+        android:id="@+id/cameraView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true" />
+
+
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/framePreview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imagePreview"/>
+
+        <ImageButton
+            android:layout_gravity="center"
+            android:background="@null"
+            android:scaleType="centerCrop"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/btnRetry"
+            android:src="@drawable/ic_refresh"/>
+
+    </FrameLayout>
+
+    <include
+        android:id="@+id/bottomLayout"
+        layout="@layout/layout_bottom_sheet" />
+
+    <com.github.jorgecastilloprz.FABProgressCircle
+        android:id="@+id/fabProgressCircle"
+        app:arcWidth="4dp"
+        android:layout_width="wrap_content"
+        app:layout_anchor="@id/bottomLayout"
+        app:layout_anchorGravity="end"
+        app:arcColor="@color/colorAccent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_take_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_camera"
+            app:rippleColor="@color/colorAccent"
+            app:backgroundTint="@color/colorPrimary"
+            app:fabSize="normal" />
+
+    </com.github.jorgecastilloprz.FABProgressCircle>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "306301046349",
+    "firebase_url": "https://lens-eye.firebaseio.com",
+    "project_id": "lens-eye",
+    "storage_bucket": "lens-eye.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:306301046349:android:300e301413ca5127",
+        "android_client_info": {
+          "package_name": "com.manmeet.lenseye"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "306301046349-3mu5fssv9mpgb8hkc3ummggbalesje9p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.manmeet.lenseye",
+            "certificate_hash": "78efa24d265181d3d69a2fc20dba87078c65d12e"
+          }
+        },
+        {
+          "client_id": "306301046349-v5m5t9fsda0pofvdimak5jjvg9iajjna.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzCZNz05vdi1sSLf7GmlYhUiyyKUShIq4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "306301046349-v5m5t9fsda0pofvdimak5jjvg9iajjna.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
